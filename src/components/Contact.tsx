@@ -143,9 +143,9 @@ const Contact = () => {
                 />
               </div>
 
-              <Button type="submit" variant="hero" size="lg" className="w-full">
-                <Send className="mr-2 h-5 w-5" />
-                Send Message
+            <Button type="submit" variant="professional" size="lg" className="w-full">
+              <Send className="mr-2 h-5 w-5" />
+              Send Message
               </Button>
             </form>
           </Card>

@@ -1,14 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 import { 
   Code, 
   Database, 
   BarChart3, 
   Brain, 
   Wrench, 
-  MessageSquare,
-  FileSpreadsheet
+  MessageSquare
 } from "lucide-react";
 
 const Skills = () => {
@@ -75,13 +73,13 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-muted/30">
+    <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            My <span className="gradient-primary bg-clip-text text-transparent">Skills</span>
+          <h2 className="heading-lg mb-6">
+            My <span className="text-primary">Skills</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-professional max-w-3xl mx-auto">
             A comprehensive toolkit for transforming data into actionable insights
           </p>
         </div>
@@ -89,20 +87,20 @@ const Skills = () => {
         {/* Technical Skills */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="p-6 gradient-card shadow-card hover:shadow-elegant transition-all duration-300">
+            <Card key={index} className="p-6 gradient-card shadow-card professional-hover">
               <div className="flex items-center mb-6">
                 <div className="gradient-primary rounded-lg p-3 mr-4 text-primary-foreground">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-semibold">{category.title}</h3>
+                <h3 className="text-xl font-bold">{category.title}</h3>
               </div>
               
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                      <span className="font-semibold">{skill.name}</span>
+                      <span className="text-sm text-muted-foreground font-bold">{skill.level}%</span>
                     </div>
                     <div className="skill-bar">
                       <div 
@@ -123,7 +121,7 @@ const Skills = () => {
             <div className="gradient-primary rounded-lg p-3 mr-4 text-primary-foreground">
               <MessageSquare className="h-6 w-6" />
             </div>
-            <h3 className="text-2xl font-semibold">Soft Skills</h3>
+            <h3 className="heading-md">Soft Skills</h3>
           </div>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -131,7 +129,7 @@ const Skills = () => {
               <Badge 
                 key={index} 
                 variant="secondary" 
-                className="text-sm py-2 px-4 hover:shadow-card transition-all duration-300 hover:scale-105"
+                className="text-sm py-2 px-4 professional-hover font-semibold"
               >
                 {skill}
               </Badge>
@@ -141,27 +139,27 @@ const Skills = () => {
 
         {/* Skills Summary */}
         <div className="grid md:grid-cols-3 gap-6 mt-12">
-          <Card className="p-6 text-center gradient-card shadow-card hover:shadow-elegant transition-all duration-300">
-            <div className="gradient-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
+          <Card className="p-6 text-center gradient-card shadow-card professional-hover">
+            <div className="gradient-primary rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
               <Code className="h-8 w-8" />
             </div>
-            <h4 className="font-semibold mb-2">Programming</h4>
+            <h4 className="font-bold mb-2">Programming</h4>
             <p className="text-sm text-muted-foreground">Python, SQL & Data Libraries</p>
           </Card>
           
-          <Card className="p-6 text-center gradient-card shadow-card hover:shadow-elegant transition-all duration-300">
-            <div className="gradient-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
+          <Card className="p-6 text-center gradient-card shadow-card professional-hover">
+            <div className="gradient-primary rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
               <BarChart3 className="h-8 w-8" />
             </div>
-            <h4 className="font-semibold mb-2">Visualization</h4>
+            <h4 className="font-bold mb-2">Visualization</h4>
             <p className="text-sm text-muted-foreground">Power BI, Tableau & Charts</p>
           </Card>
           
-          <Card className="p-6 text-center gradient-card shadow-card hover:shadow-elegant transition-all duration-300">
-            <div className="gradient-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
+          <Card className="p-6 text-center gradient-card shadow-card professional-hover">
+            <div className="gradient-primary rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
               <Brain className="h-8 w-8" />
             </div>
-            <h4 className="font-semibold mb-2">Machine Learning</h4>
+            <h4 className="font-bold mb-2">Machine Learning</h4>
             <p className="text-sm text-muted-foreground">ML Models & Deep Learning</p>
           </Card>
         </div>

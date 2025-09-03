@@ -9,18 +9,18 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 font-semibold",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90 font-semibold",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground font-semibold",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "gradient-primary text-primary-foreground shadow-elegant hover:shadow-glow transition-spring hover:scale-105",
-        accent: "gradient-accent text-accent-foreground shadow-card hover:shadow-elegant transition-smooth",
-        glass: "glass-card text-foreground hover:bg-card/90 transition-smooth",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 font-semibold",
+        ghost: "hover:bg-accent hover:text-accent-foreground font-semibold",
+        link: "text-primary underline-offset-4 hover:underline font-semibold",
+        professional: "gradient-primary text-primary-foreground shadow-professional hover:shadow-hover transition-smooth hover:-translate-y-0.5 font-bold",
+        accent: "gradient-accent text-accent-foreground shadow-card hover:shadow-professional transition-smooth font-bold",
+        glass: "glass-card text-foreground hover:bg-card transition-smooth font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
