@@ -158,7 +158,7 @@ const Education = () => {
             <div className="gradient-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-primary-foreground">
               <Calendar className="h-8 w-8" />
             </div>
-            <h4 className="font-semibold mb-2">2024 Graduate</h4>
+            <h4 className="font-semibold mb-2">2023 Graduate</h4>
             <p className="text-sm text-muted-foreground">Fresh & Motivated</p>
           </Card>
         </div>
