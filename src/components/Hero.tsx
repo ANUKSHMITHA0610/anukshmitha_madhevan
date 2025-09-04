@@ -136,7 +136,7 @@ const Hero = () => {
             <div className="relative">
               {/* Main Image */}
               <div className="relative w-80 h-80 lg:w-[450px] lg:h-[450px]">
-                <div className="w-full h-full rounded-3xl overflow-hidden shadow-profile border-4 border-white/20 backdrop-blur-sm modern-hover">
+                <div className="w-full h-full rounded-full overflow-hidden shadow-profile border-4 border-white/20 backdrop-blur-sm modern-hover">
                   <img 
                     src={profilePhoto} 
                     alt="Anukshmitha Madhevan - Data Analyst & Data Scientist" 
@@ -145,7 +145,7 @@ const Hero = () => {
                 </div>
                 
                 {/* Glowing Ring */}
-                <div className="absolute inset-0 rounded-3xl ring-4 ring-teal-400/30 pulse-glow"></div>
+                <div className="absolute inset-0 rounded-full ring-4 ring-teal-400/30 pulse-glow"></div>
               </div>
               
               {/* Floating Badges */}
