@@ -5,6 +5,9 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 import plantDiseaseImg from "@/assets/project-plant-disease.jpg";
 import carPriceImg from "@/assets/project-car-price.jpg";
 import dataSparkImg from "@/assets/project-dataspark.jpg";
+import microsoftCyberImg from "@/assets/project-microsoft-cyber.jpg";
+import dominosSalesImg from "@/assets/project-dominos-sales.jpg";
+import redBusImg from "@/assets/project-redbus-scraping.jpg";
 
 const Projects = () => {
   const projects = [
@@ -56,7 +59,7 @@ const Projects = () => {
     {
       title: "Microsoft: Cybersecurity Incident Classification",
       description: "ML models for classifying cybersecurity incidents with advanced feature engineering and imbalanced data handling techniques.",
-      image: null,
+      image: microsoftCyberImg,
       technologies: ["Python", "Machine Learning", "Feature Engineering", "Classification", "Security"],
       features: [
         "Advanced feature engineering",
@@ -71,7 +74,7 @@ const Projects = () => {
     {
       title: "Domino's Sales Prediction",
       description: "Forecasting pizza sales for inventory optimization using time series analysis and predictive modeling.",
-      image: null,
+      image: dominosSalesImg,
       technologies: ["Python", "Time Series", "Forecasting", "Sales Analytics", "Optimization"],
       features: [
         "Sales forecasting model",
@@ -86,7 +89,7 @@ const Projects = () => {
     {
       title: "RedBus Data Scraping & Analysis",
       description: "Web scraping RedBus data with Selenium and creating Streamlit visualization for travel insights and route analysis.",
-      image: null,
+      image: redBusImg,
       technologies: ["Python", "Selenium", "Web Scraping", "Streamlit", "Data Analysis"],
       features: [
         "Automated data scraping",
