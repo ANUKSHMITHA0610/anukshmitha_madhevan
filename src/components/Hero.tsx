@@ -89,7 +89,7 @@ const Hero = () => {
           {/* Profile Image - Right Side */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-professional border-2 border-border">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-professional border-2 border-border">
                 <img 
                   src={profilePhoto} 
                   alt="Anukshmitha Madhevan - Data Analyst & Data Scientist" 
