@@ -8,6 +8,15 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/434e4952-7fa9-473f-adab-27748753048a.png';
+    link.download = 'Anukshmitha_Madhevan_Resume.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-background">
       <div className="container mx-auto px-6 py-20">
@@ -45,6 +54,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
+                  onClick={downloadResume}
                   className="text-lg px-8"
                 >
                   <Download className="mr-2 h-5 w-5" />
