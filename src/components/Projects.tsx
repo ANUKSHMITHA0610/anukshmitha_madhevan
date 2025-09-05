@@ -22,7 +22,7 @@ const Projects = () => {
         "Real-time image classification",
         "Streamlit web deployment"
       ],
-      github: "https://github.com/ANUKSHMITHA0610",
+      github: "https://github.com/ANUKSHMITHA0610/Plant-Disease-Detection-from-Images",
       demo: "#",
       category: "Machine Learning"
     },
@@ -37,7 +37,7 @@ const Projects = () => {
         "Multiple regression algorithms",
         "Interactive price calculator"
       ],
-      github: "https://github.com/ANUKSHMITHA0610",
+      github: "https://github.com/ANUKSHMITHA0610/Car-Dheko-Used-Car-Price-Prediction",
       demo: "#",
       category: "Data Science"
     },
@@ -52,7 +52,7 @@ const Projects = () => {
         "KPI performance tracking",
         "Business intelligence insights"
       ],
-      github: "https://github.com/ANUKSHMITHA0610",
+      github: "https://github.com/ANUKSHMITHA0610/DataSpark-Illuminating-Insights-for-Global-Electronics",
       demo: "#",
       category: "Business Intelligence"
     },
@@ -67,7 +67,7 @@ const Projects = () => {
         "Security incident classification",
         "Model performance optimization"
       ],
-      github: "https://github.com/ANUKSHMITHA0610",
+      github: "https://github.com/ANUKSHMITHA0610/Microsoft-Classifying-Cybersecurity-Incidents-with-Machine-Learning",
       demo: "#",
       category: "Cybersecurity"
     },
@@ -82,7 +82,7 @@ const Projects = () => {
         "Time series analysis",
         "Business impact assessment"
       ],
-      github: "https://github.com/ANUKSHMITHA0610",
+      github: "https://github.com/ANUKSHMITHA0610/Dominos-Predictive-Purchase-Order-System",
       demo: "#",
       category: "Forecasting"
     },
@@ -97,7 +97,7 @@ const Projects = () => {
         "Interactive visualizations",
         "Real-time data updates"
       ],
-      github: "https://github.com/ANUKSHMITHA0610",
+      github: "https://github.com/ANUKSHMITHA0610/Redbus-datascrapping",
       demo: "#",
       category: "Web Scraping"
     }
