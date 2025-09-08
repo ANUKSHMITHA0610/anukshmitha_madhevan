@@ -23,7 +23,7 @@ const Projects = () => {
         "Streamlit web deployment"
       ],
       github: "https://github.com/ANUKSHMITHA0610/Plant-Disease-Detection-from-Images",
-      demo: "#",
+      demo: "https://github.com/ANUKSHMITHA0610/Plant-Disease-Detection-from-Images",
       category: "Machine Learning"
     },
     {
@@ -38,7 +38,7 @@ const Projects = () => {
         "Interactive price calculator"
       ],
       github: "https://github.com/ANUKSHMITHA0610/Car-Dheko-Used-Car-Price-Prediction",
-      demo: "#",
+      demo: "https://github.com/ANUKSHMITHA0610/Car-Dheko-Used-Car-Price-Prediction",
       category: "Data Science"
     },
     {
@@ -53,7 +53,7 @@ const Projects = () => {
         "Business intelligence insights"
       ],
       github: "https://github.com/ANUKSHMITHA0610/DataSpark-Illuminating-Insights-for-Global-Electronics",
-      demo: "#",
+      demo: "https://github.com/ANUKSHMITHA0610/DataSpark-Illuminating-Insights-for-Global-Electronics",
       category: "Business Intelligence"
     },
     {
@@ -68,7 +68,7 @@ const Projects = () => {
         "Model performance optimization"
       ],
       github: "https://github.com/ANUKSHMITHA0610/Microsoft-Classifying-Cybersecurity-Incidents-with-Machine-Learning",
-      demo: "#",
+      demo: "https://github.com/ANUKSHMITHA0610/Microsoft-Classifying-Cybersecurity-Incidents-with-Machine-Learning",
       category: "Cybersecurity"
     },
     {
@@ -83,7 +83,7 @@ const Projects = () => {
         "Business impact assessment"
       ],
       github: "https://github.com/ANUKSHMITHA0610/Dominos-Predictive-Purchase-Order-System",
-      demo: "#",
+      demo: "https://github.com/ANUKSHMITHA0610/Dominos-Predictive-Purchase-Order-System",
       category: "Forecasting"
     },
     {
@@ -98,7 +98,7 @@ const Projects = () => {
         "Real-time data updates"
       ],
       github: "https://github.com/ANUKSHMITHA0610/Redbus-datascrapping",
-      demo: "#",
+      demo: "https://github.com/ANUKSHMITHA0610/Redbus-datascrapping",
       category: "Web Scraping"
     }
   ];
