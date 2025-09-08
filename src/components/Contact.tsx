@@ -67,37 +67,11 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-primary mr-3" />
-                  <span>IST (UTC+5:30) - Available for remote work</span>
+                  <span>Available for remote work & office positions</span>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-8 gradient-card shadow-card">
-              <div className="flex items-center mb-6">
-                <div className="gradient-accent rounded-lg p-3 mr-4 text-accent-foreground">
-                  <Github className="h-6 w-6" />
-                </div>
-                <h3 className="text-2xl font-semibold">Technical Skills</h3>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">Data Science</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Machine Learning</li>
-                    <li>• Predictive Analytics</li>
-                    <li>• Data Visualization</li>
-                  </ul>
-                </div>
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">Technology</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Python & R</li>
-                    <li>• SQL & NoSQL</li>
-                    <li>• Cloud Platforms</li>
-                  </ul>
-                </div>
-              </div>
-            </Card>
           </div>
 
           {/* Contact Information */}
