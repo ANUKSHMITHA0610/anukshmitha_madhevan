@@ -1,29 +1,16 @@
-import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
 import { 
   Mail, 
   Phone, 
   MapPin, 
   Github, 
   Linkedin, 
-  Send,
   MessageSquare,
   Clock
 } from "lucide-react";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6" />,
@@ -51,33 +38,6 @@ const Contact = () => {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Contact from ${formData.name}`);
-    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
-    const mailtoLink = `mailto:anukshmitha@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Open default email client
-    window.location.href = mailtoLink;
-    
-    toast({
-      title: "Message Prepared!",
-      description: "Your default email client should open with the message ready to send.",
-    });
-
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -91,64 +51,54 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
-          <Card className="p-8 gradient-card shadow-card">
-            <div className="flex items-center mb-6">
-              <div className="gradient-primary rounded-lg p-3 mr-4 text-primary-foreground">
-                <MessageSquare className="h-6 w-6" />
+          {/* Professional Summary */}
+          <div className="space-y-6">
+            <Card className="p-8 gradient-card shadow-card">
+              <div className="flex items-center mb-6">
+                <div className="gradient-primary rounded-lg p-3 mr-4 text-primary-foreground">
+                  <MapPin className="h-6 w-6" />
+                </div>
+                <h3 className="text-2xl font-semibold">Location & Availability</h3>
               </div>
-              <h3 className="text-2xl font-semibold">Send a Message</h3>
-            </div>
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Label htmlFor="name" className="text-sm font-medium">Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder="Your full name"
-                  required
-                  className="mt-2"
-                />
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <MapPin className="h-5 w-5 text-primary mr-3" />
+                  <span>Chennai, Tamil Nadu, India</span>
+                </div>
+                <div className="flex items-center">
+                  <Clock className="h-5 w-5 text-primary mr-3" />
+                  <span>IST (UTC+5:30) - Available for remote work</span>
+                </div>
               </div>
+            </Card>
 
-              <div>
-                <Label htmlFor="email" className="text-sm font-medium">Email</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="your.email@example.com"
-                  required
-                  className="mt-2"
-                />
+            <Card className="p-8 gradient-card shadow-card">
+              <div className="flex items-center mb-6">
+                <div className="gradient-accent rounded-lg p-3 mr-4 text-accent-foreground">
+                  <MessageSquare className="h-6 w-6" />
+                </div>
+                <h3 className="text-2xl font-semibold">Core Expertise</h3>
               </div>
-
-              <div>
-                <Label htmlFor="message" className="text-sm font-medium">Message</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Tell me about your project or how I can help..."
-                  rows={6}
-                  required
-                  className="mt-2"
-                />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-primary">Data Science</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Machine Learning</li>
+                    <li>• Predictive Analytics</li>
+                    <li>• Data Visualization</li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold text-primary">Technology</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Python & R</li>
+                    <li>• SQL & NoSQL</li>
+                    <li>• Cloud Platforms</li>
+                  </ul>
+                </div>
               </div>
-
-            <Button type="submit" variant="professional" size="lg" className="w-full">
-              <Send className="mr-2 h-5 w-5" />
-              Send Message
-              </Button>
-            </form>
-          </Card>
+            </Card>
+          </div>
 
           {/* Contact Information */}
           <div className="space-y-6">
