@@ -75,9 +75,9 @@ const Contact = () => {
             <Card className="p-8 gradient-card shadow-card">
               <div className="flex items-center mb-6">
                 <div className="gradient-accent rounded-lg p-3 mr-4 text-accent-foreground">
-                  <MessageSquare className="h-6 w-6" />
+                  <Github className="h-6 w-6" />
                 </div>
-                <h3 className="text-2xl font-semibold">Core Expertise</h3>
+                <h3 className="text-2xl font-semibold">Technical Skills</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
