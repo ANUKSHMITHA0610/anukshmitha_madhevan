@@ -97,7 +97,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Image - Right Side */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-center">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-professional border-2 border-border">
                 <img 
