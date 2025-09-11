@@ -99,19 +99,15 @@ const Hero = () => {
           {/* Profile Image - Right Side */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-center">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-professional border-2 border-border">
-                <ProcessedProfileImage 
-                  alt="Anukshmitha Madhevan - Data Analyst & Data Scientist" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              {/* Professional badges */}
-              <div className="absolute -bottom-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg shadow-card font-bold">
-                Data Science
-              </div>
-              <div className="absolute -top-4 -left-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg shadow-card font-bold">
-                ML Expert
+              {/* Enhanced profile image with modern styling */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-elegant border-4 border-gradient-subtle backdrop-blur-sm">
+                  <ProcessedProfileImage 
+                    alt="Anukshmitha Madhevan - Data Analyst & Data Scientist" 
+                    className="w-full h-full object-cover hover:scale-105 transition-smooth"
+                  />
+                </div>
               </div>
             </div>
           </div>
