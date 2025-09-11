@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo-new.png";
+import ProcessedProfileImage from "./ProcessedProfileImage";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -100,8 +100,7 @@ const Hero = () => {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-center">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-professional border-2 border-border">
-                <img 
-                  src={profilePhoto} 
+                <ProcessedProfileImage 
                   alt="Anukshmitha Madhevan - Data Analyst & Data Scientist" 
                   className="w-full h-full object-cover"
                 />
