@@ -33,7 +33,7 @@ const Hero = () => {
               </h1>
               
               <h2 className="text-xl lg:text-2xl font-bold text-accent">
-                Data Analyst | Data Scientist | Problem Solver
+                Data Analyst | Computer science graduate | Problem Solver
               </h2>
               
               <p className="text-professional max-w-xl lg:max-w-none">
