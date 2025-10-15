@@ -102,7 +102,7 @@ const Hero = () => {
               {/* Enhanced profile image with modern styling */}
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full animate-pulse"></div>
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-elegant border-4 border-gradient-subtle backdrop-blur-sm">
+                <div className="relative w-96 h-96 lg:w-[26rem] lg:h-[26rem] rounded-full overflow-hidden shadow-elegant border-4 border-gradient-subtle backdrop-blur-sm">
                   <ProcessedProfileImage 
                     alt="Anukshmitha Madhevan - Data Analyst & Data Scientist" 
                     className="w-full h-full object-cover hover:scale-105 transition-smooth"
